@@ -11,7 +11,9 @@ class Navigation extends Component {
         <Navbar color="faded">
           <NavItem>
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/cv">Cv</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/prog">Programming</NavLink>
           </NavItem>
         </Navbar>
       </Nav>
