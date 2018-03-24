@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Route,HashRouter} from 'react-router-dom';
+import {Route,HashRouter,Redirect} from 'react-router-dom';
 import Navigation from './Navigation.js';
 import Home from './Home.js';
 import Prog from './Prog.js';
+import Equip from './Equip.js';
 
 class App extends Component {
 
@@ -21,8 +22,10 @@ class App extends Component {
             </div>
 
             <div className="body">
+              <Redirect from="/" to="/home" />
               <Route path="/home" component={Home}></Route>
               <Route path="/prog" component={Prog}></Route>
+              <Route path="/equip" component={Equip}> </Route>
             </div>
         
           </div>
